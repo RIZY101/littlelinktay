@@ -15,21 +15,23 @@
     <link rel="icon" type="image/x-icon" href="/images/RichieTay.jpeg"> <!-- Update this with your own favicon -->
     
     <!-- Meta Description - Write a description (150-160 characters recommended) -->
-    <meta name="description" content="Replace this with your own, this appears in search results and when sharing.">
+    <meta name="description" content="Taylor and Richie's registry">
     
     <!-- Keywords -->
-    <meta name="keywords" content="your name, industry, and specialties">
+    <meta name="keywords" content="personal">
     
     <!-- Canonical URL - Helps prevent duplicate content issues -->
-    <meta rel="canonical" href="https://yourwebsite.com">
+    <meta rel="canonical" href="https://taylorandrichie.com">
     
     <!-- Author Information -->
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Richard Zins">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js" integrity="sha384-H5SrcfygHmAuTDZphMHqBJLc3FhssKjG7w/CeCpFReSfwBWDTKpkzPP8c+cLsK+V" crossorigin="anonymous"></script>
   </head>
 <body>
     <div class="container">
@@ -54,7 +56,7 @@
             
             <!-- All your buttons go here -->
             <div class="button-stack" role="navigation">
-              <a class="button button-default" href="https://www.tiffany.com" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/tiff.ico" alt="Tiff Logo">Tiff1</a>
+              <a hx-post="/clicked" class="button button-default" href="https://www.tiffany.com" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/tiff.ico" alt="Tiff Logo">Tiff1</a>
               <a class="button button-default" href="https://www.tiffany.com" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/tiff.ico" alt="Tiff Logo">Tiff2</a>
               <a class="button button-default" href="https://www.tiffany.com" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/tiff.ico" alt="Tiff Logo">Tiff3</a>
               <a class="button button-default" href="/" target="_self" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/tiff.ico" alt="Tiff Logo">Back</a>

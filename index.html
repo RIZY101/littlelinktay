@@ -15,21 +15,23 @@
     <link rel="icon" type="image/x-icon" href="/images/RichieTay.jpeg"> <!-- Update this with your own favicon -->
     
     <!-- Meta Description - Write a description (150-160 characters recommended) -->
-    <meta name="description" content="Replace this with your own, this appears in search results and when sharing.">
+    <meta name="description" content="Taylor and Richie's registry">
     
     <!-- Keywords -->
-    <meta name="keywords" content="your name, industry, and specialties">
+    <meta name="keywords" content="personal">
     
     <!-- Canonical URL - Helps prevent duplicate content issues -->
-    <meta rel="canonical" href="https://yourwebsite.com">
+    <meta rel="canonical" href="https://taylorandrichie.com">
     
     <!-- Author Information -->
-    <meta name="author" content="Your Name">
+    <meta name="author" content="Richard Zins">
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/brands.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js" integrity="sha384-H5SrcfygHmAuTDZphMHqBJLc3FhssKjG7w/CeCpFReSfwBWDTKpkzPP8c+cLsK+V" crossorigin="anonymous"></script>
   </head>
 <body>
     <div class="container">
@@ -57,6 +59,13 @@
               <a class="button button-default" href="https://www.williams-sonoma.com/registry/c6tk2zzsr5/registry-list.html" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/ws.ico" alt="WS Logo">William Sonoma</a>
               <a class="button button-default" href="tiffany.html" target="_self" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/tiff.ico" alt="Tiff Logo">Tiffany</a>
               <a class="button button-default" href="https://www.target.com/gift-registry/gift/Taylor-Richie-2026" target="_blank" rel="noopener" role="button"><img class="icon" aria-hidden="true" src="images/icons/Target_logo.svg" alt="Target Logo">Target</a>
+            
+              <button hx-post="/clicked"
+                hx-trigger="click"
+                hx-target="#parent-div"
+                hx-swap="outerHTML">
+                Click Me Test!
+              </button>
       </div>
         
       <!-- Feel free to add your own footer information, including updating `privacy.html` to reflect how your LittleLink fork is set up -->

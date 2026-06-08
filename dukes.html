@@ -61,8 +61,29 @@
                   <!-- <label for="category">Family</label> -->
                       <select class="button button-default" id="category" name="category" onchange="updateOptions()">
                         <option value="">Name</option>
-                        <option value="zins">Zins</option>
+                        <option value="cabello">Cabello</option>
                         <option value="dederick">Dederick</option>
+                        <option value="desenberg">Desenberg</option>
+                        <option value="duffy">Duffy</option>
+                        <option value="dwyer">Dwyer</option>
+                        <option value="goldstein">Goldstein</option>
+                        <option value="hall">Hall</option>
+                        <option value="hinton">Hinton</option>
+                        <option value="irvin">Irvin</option>
+                        <option value="maturo">Maturo</option>
+                        <option value="mcconville">Mcconville</option>
+                        <option value="demurphy">Murphy, Danny & Emily</option>
+                        <option value="jsmurphy">Murphy, Joey & Savannah</option>
+                        <option value="noel">Noel</option>
+                        <option value="ritz">Ritz</option>
+                        <option value="smart">Smart</option>
+                        <option value="vankirk">Van Kirk</option>
+                        <option value="washburn">Washburn</option>
+                        <option value="wolfe">Wolfe</option>
+                        <option value="woog">Woog</option>
+                        <option value="yngve">Yngve</option>
+                        <option value="zins">Zins</option>
+                        <option value="ezins">Zins, Elizabeth</option>
                       </select>
                       <select class="button button-default" id="number" name="number">
                         <option value="">Number</option>
@@ -79,8 +100,29 @@
   <script>
         // 1. Define the data mapping for the second dropdown
         const subOptions = {
+            cabello: ["1"],
+            woog: ["1"],
+            ezins: ["1"],
+            demurphy: ["1", "2"],
+            wolfe: ["1", "2"],
+            goldstein: ["1", "2"],
+            ritz: ["1", "2"],
+            smart: ["1", "2"],
+            hall: ["1", "2"],
+            desenberg: ["1", "2"],
+            jsmurphy: ["1", "2"],
+            mcconville: ["1", "2"],
+            hinton: ["1", "2"],
+            vankirk: ["1", "2"],
+            duffy: ["1", "2"],
+            irvin: ["1", "2"],
+            noel: ["1", "2"],
+            dwyer: ["1", "2"],
             zins: ["1", "2", "3"],
-            dederick: ["1", "2"]
+            maturo: ["1", "2", "3"],
+            dederick: ["1", "2", "3", "4"],
+            washburn: ["1", "2", "3", "4"],
+            yngve: ["1", "2", "3", "4"]
         };
 
         function updateOptions() {
